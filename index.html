@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+    <title>Mi Viaje a la Parque Nacional Banff</title>
+  </head>
+  <!-- navbar -->
+  <body class="text-dark">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand"
+        ><img src="img/cover.png" alt="Logo" style="width: 40px"
+      /></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarMenu"
+        aria-expanded="false"
+        aria-controls="navbarMenu"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- <div class = "collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a href="#footer" class="nav-link">About This Project</a></li>
+                </ul>
+            </div> -->
+    </nav>
+    <!-- title card -->
+    <div id="cover" class="container-fluid p-0">
+      <div class="row h-100">
+        <div
+          class="col-lg-6 col-md-12 my-auto coverText text-light"
+          id="coverText"
+        >
+          <h1>Mi Viaje a la Parque Nacional Banff</h1>
+          <br />
+          <h3 style="text-align: right">
+            ¡Hola! Voy a compartir <strong>mi viaje</strong> a Parque Nacional Banff en Canadá.
+            Es un parque muy bonito. Fui a Canadá durante las vacaciones de
+            navidad de 2019.
+          </h3>
+        </div>
+        <div class="col-lg-6 col-md-12 my-auto" id="coverArt">
+          <img src="img/cover.png" style="width: 80%" />
+        </div>
+      </div>
+    </div>
+    <!-- over view -->
+    <div id="sl1" class="container-fluid min-vh-100 text-light">
+      <p id="descriptionText">
+        El Vuelo<br />
+        Después de la escuela, <strong>hicimos nuestras maletas</strong> y fuimos al <strong>aeropuerto</strong>.
+        Cuando llegamos al aeropuerto, conseguimos nuestras <strong>tarjeta de embarque</strong>.
+        Esperamos mucho tiempo porque nuestro vuelo estuvo <strong>retrasado</strong>.
+        <br />
+        Cuando <strong>attericé </strong>en Canadá, necesité mi <strong>pasaporte</strong> para pasar <strong>la frontera</strong>.
+        Hubo muchas personas en la frontera porque navidad estuvo <strong>la temporada
+        alta</strong>.
+      </p>
+    </div>
+    <!-- title card -->
+    <div id="sl2" class="container-fluid min-vh-100 text-light">
+      <h2 id="comp">En el Parque</h2>
+    </div>
+    <!-- slide 1 -->
+    <div class="container-fluid p-0">
+      <div class="row align-items-center">
+        <div class="col-xl-8 col-lg-7 col-md-12" id="l1">
+          <img src="img/pzkpf2.jpg" alt="pz2" style="width: 100%" />
+        </div>
+        <div class="col-xl-4 col-lg-5 col-md-12" id="r1">
+          <p class="pl-3" style="font-size: 1.5rem; text-indent: 30px">
+            Porque el parque esta muy <strong>peligroso</strong> durante el invierno, no hubo
+            muchas <strong>turistas</strong> y solo hubo itinerarios. Hubo muchos lugares
+            <strong>prohibidos</strong>. Pero, el parque fue más bonito durante el invierno.
+          </p>
+        </div>
+      </div>
+    </div>
+    <br />
+    <!-- slide 2 -->
+    <div class="container-fluid p-0">
+      <div class="row align-items-center">
+        <div
+          class="col-xl-4 col-lg-5 col-md-12 order-lg-1 order-md-12 order-sm-12 order-12"
+          id="l2"
+        >
+          <p class="pl-3" style="font-size: 1.5rem; text-indent: 30px">
+            En Banff, nos <strong>alojamos</strong> en un <strong>alojamiento</strong> muy pequeño. No fue <strong>de
+            categoría</strong> pero la vista fue muy buena.
+          </p>
+        </div>
+        <div
+          class="col-xl-8 col-lg-7 col-md-12 order-lg-12 order-md-1 order-sm-1 order-1"
+          id="r2"
+        >
+          <img src="img/pzkpf3.jpg" alt="pz3" style="width: 100%" />
+        </div>
+      </div>
+    </div>
+    <br />
+    <!-- slide 3 -->
+    <div class="container-fluid p-0">
+      <div class="row align-items-center">
+        <div class="col-xl-8 col-lg-7 col-md-12" id="l3">
+          <img src="img/sdkfz251.jpg" alt="sdkfz251" style="width: 100%" />
+        </div>
+        <div class="col-xl-4 col-lg-5 col-md-12" id="r3">
+          <p class="pl-3" style="font-size: 1.5rem; text-indent: 30px">
+            Nuestro <strong>guía turística</strong> sabía dónde estuvieron los lugares más bonitos. Fue a muchos lugares <strong>turísticos</strong> con nosotros. También él habló mucho sobre <strong>seguridad</strong>.
+            Él dijo que vio muchos <strong>accidentes</strong> durante el invierno y debemos tener <strong>medidas de seguridad</strong>.  
+          </p>
+        </div>
+      </div>
+    </div>
+    <br />
+    <!-- slide 4 -->
+    <div class="container-fluid p-0">
+      <div class="row align-items-center">
+        <div
+          class="col-xl-4 col-lg-5 col-md-12 order-lg-1 order-md-12 order-sm-12 order-12"
+          id="l4"
+        >
+          <p class="pl-3" style="font-size: 1.5rem; text-indent: 30px">
+            Después de tres días, el viaje terminó. Estuvo una <strong>aventura</strong>. Fuimos a Vacouver volvimos a San Diego.
+          </p>
+        </div>
+        <div
+          class="col-xl-8 col-lg-7 col-md-12 order-lg-12 order-md-1 order-sm-1 order-1"
+          id="r4"
+        >
+          <img src="img/stugiii.jpg" alt="StugIII" style="width: 100%" />
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <!-- <div id = "footer" class = "container-fluid bg-light p-4">
+            <div class="row">
+                <div class="col-lg-3 col-md-12">
+                    <h3>
+                        Explore
+                    </h3>
+                    <nav class="navbar-light">
+                        <ul class="navbar-nav">
+                            <li>
+                                <a class="nav-link" href="#sl2" style="font-size: 20px;">Composition</a>
+                            </li>
+                            <li style="text-indent: 15px;">
+                                <a class="nav-link" href="#l1">Pzkpfwg. II</a>
+                            </li>
+                            <li style="text-indent: 15px;">
+                                <a class="nav-link" href="#l2">Pzkpfwg. III</a>
+                            </li>
+                            <li style="text-indent: 15px;">
+                                <a class="nav-link" href="#l3">Sdkfz. 251</a>
+                            </li>
+                            <li style="text-indent: 15px;">
+                                <a class="nav-link" href="#l4">StuG. III</a>
+                            </li>
+    
+                        </ul>
+                    </nav>
+
+                </div>
+                <div class="col-lg-3 col-md-12">
+                    <h3>
+                        Wiki Sources
+                    </h3>
+                    <nav class="navbar-light">
+                        <ul class="navbar-nav">
+                            <li>
+                                <a class="nav-link" target = "_blank" href="https://en.wikipedia.org" style="font-size: 20px;">Wikipedia</a>
+                            </li>
+                            <li style="text-indent: 15px;">
+                                <a class="nav-link" target = "_blank" href="https://en.wikipedia.org/wiki/7th_Panzer_Division_(Wehrmacht)">The Division</a>
+                            </li>
+                            <li style="text-indent: 15px;">
+                                <a class="nav-link" target = "_blank" href="https://en.wikipedia.org/wiki/Panzer_II">Pzkpfwg. II</a>
+                            </li>
+                            <li style="text-indent: 15px;">
+                                <a class="nav-link" target = "_blank" href="https://en.wikipedia.org/wiki/Panzer_III">Pzkpfwg. III</a>
+                            </li>
+                            <li style="text-indent: 15px;">
+                                <a class="nav-link" target = "_blank" href="https://en.wikipedia.org/wiki/Sd.Kfz._251">Sdkfz. 251</a>
+                            </li>
+                            <li style="text-indent: 15px;">
+                                <a class="nav-link" target = "_blank" href="https://en.wikipedia.org/wiki/Sturmgesch%C3%BCtz_III">Stug. III</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-lg-3 col-md-12">
+                    <h3>
+                        Journal Sources
+                    </h3>
+                    <nav class="navbar-light">
+                        <ul class="navbar-nav">
+                            <li>
+                                <a class="nav-link" href="bibliography.html" target="_blank" style="font-size: 20px;">Read More</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-lg-3 col-md-12">
+                    <h3 class="text-warning">More to Come Soon...</h3>
+                    <nav class="navbar-light">
+                        <ul class="navbar-nav">
+                            <li>
+                                <a class="nav-link text-info" href="https://github.com/hausen-wu-23/div7" target="_blank" style="font-size: 20px;">Check Out the Dev Page! </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div> -->
+
+    <!-- back to top button -->
+    <div id="backtotop">
+      <a href="#cover" class="text-light"
+        ><span
+          class="fa fa-arrow-up"
+          style="font-size: 45px; color: white"
+        ></span
+        >Home</a
+      >
+    </div>
+    <script>
+      gsap.from("#coverArt", {
+        duration: 1.8,
+        // ease:"SlowMo",
+        delay: 0.1,
+        x: 700,
+      });
+      gsap.from("#coverText", {
+        duration: 0.8,
+        delay: 0.8,
+        opacity: 0,
+        x: -500,
+      });
+      gsap.from("#descriptionText", {
+        scrollTrigger: "#descriptionText",
+        duration: 0.8,
+        delay: 0.3,
+        opacity: 0,
+        y: 100,
+      });
+      gsap.from("#comp", {
+        scrollTrigger: "#comp",
+        duration: 0.5,
+        delay: 0.3,
+        opacity: 0,
+        y: 100,
+      });
+      gsap.from("#l1", {
+        scrollTrigger: "#r1",
+        duration: 0.8,
+        delay: 0.3,
+        opacity: 0,
+        x: -100,
+      });
+      gsap.from("#r1", {
+        scrollTrigger: "#r1",
+        duration: 0.8,
+        delay: 0.3,
+        opacity: 0,
+        x: 100,
+      });
+      gsap.from("#l2", {
+        scrollTrigger: "#l2",
+        duration: 0.8,
+        delay: 0.3,
+        opacity: 0,
+        x: -100,
+      });
+      gsap.from("#r2", {
+        scrollTrigger: "#l2",
+        duration: 0.8,
+        delay: 0.3,
+        opacity: 0,
+        x: 100,
+      });
+      gsap.from("#l3", {
+        scrollTrigger: "#r3",
+        duration: 0.8,
+        delay: 0.3,
+        opacity: 0,
+        x: -100,
+      });
+      gsap.from("#r3", {
+        scrollTrigger: "#r3",
+        duration: 0.8,
+        delay: 0.3,
+        opacity: 0,
+        x: 100,
+      });
+      gsap.from("#l4", {
+        scrollTrigger: "#l4",
+        duration: 0.8,
+        delay: 0.3,
+        opacity: 0,
+        x: -100,
+      });
+      gsap.from("#r4", {
+        scrollTrigger: "#l4",
+        duration: 0.8,
+        delay: 0.3,
+        opacity: 0,
+        x: 100,
+      });
+      // gsap.from("#footer",{
+      //     scrollTrigger:{
+      //         trigger:"#footer"
+      //     },
+      //     duration:0.8,
+      //     delay:0.3,
+      //     opacity:0,
+      // })
+      gsap.from("#backtotop", {
+        scrollTrigger: {
+          trigger: "#cover",
+          toggleActions: "reverse restart reverse",
+        },
+        duration: 0.3,
+        delay: 0.3,
+        opacity: 0,
+        y: 100,
+      });
+    </script>
+  </body>
+</html>
